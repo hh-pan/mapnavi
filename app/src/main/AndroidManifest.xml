@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test.baidunavi">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 写sd卡 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!--网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:name="com.test.baidunavi.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <!--*****************************BaiduMap start*********************************-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="FqMwnltFq9xwrb3GWIPDAG34Ljg5WPEr" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!--*****************************BaiduMap end*********************************-->
+
+        <activity android:name="com.test.baidunavi.MainActivity">
+        </activity>
+        <activity android:name="com.test.baidunavi.DemoGuideActivity"/>
+        <activity android:name="com.test.baidunavi.DemoExtGpsActivity" />
+        <activity android:name="com.test.baidunavi.WNaviGuideActivity" />
+        <activity android:name="com.test.baidunavi.BNaviGuideActivity" />
+        <activity android:name="com.test.baidunavi.SecondActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

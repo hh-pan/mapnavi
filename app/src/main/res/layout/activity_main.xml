@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/navi_dimens_10dp"
+        android:text="定位" />
+
+    <Button
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/navi_dimens_10dp"
+        android:text="定位" />
+
+    <Button
+        android:id="@+id/car"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/navi_dimens_10dp"
+        android:layout_height="wrap_content"
+        android:text="驾车导航" />
+
+    <Button
+        android:id="@+id/ride"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/navi_dimens_10dp"
+        android:layout_height="wrap_content"
+        android:text="骑行导航" />
+
+    <Button
+        android:id="@+id/walk"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/navi_dimens_10dp"
+        android:layout_height="wrap_content"
+        android:text="步行导航" />
+
+
+</LinearLayout>

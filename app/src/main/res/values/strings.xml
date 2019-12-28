@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="permission_camera_denied">权限拒绝</string>
+    <string name="permission_camera_never_askagain">不再询问</string>
+</resources>

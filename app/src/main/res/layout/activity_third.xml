@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="我是第3个页面"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:text="1"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="match_parent"
+        android:text="打开"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/open1"
+        android:layout_width="match_parent"
+        android:text="打开界面2"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
